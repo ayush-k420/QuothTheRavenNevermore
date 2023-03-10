@@ -64,6 +64,14 @@
 
 
 </style>
+<script>
+    function testResults (form) {
+    var inputValue = form.inputbox.value;
+    if (inputValue.toUpperCase()=="NEVERMORE") {
+    alert("http://localhost:63342/poemproj/bruh.html?_ijt=rt8fsipnm3aj92j4p7ekubl05i&_ij_reload")
+    }
+}
+</script>
 
 <body>
 <table>
@@ -123,17 +131,16 @@
         </ul>
         </div>
         <div style="padding-bottom: 5em; padding-left: 9em">
-        <form class="form" action="main.py" method="post">
+        <form class="form" action="" method="post">
             <label style="font-size: 2em; padding-left: 1em;">Key:</label>
             <br>
-            <input type="text" style="size: 3em;" name="key">
-            <input type="submit">
+            <input type="text" name="inputbox" style="size: 3em;">
+            <input type="submit" onclick="testResults(this.form)">
         </form>
         </div>
-        <h2 style="color: #850000; align: center">Search the first scroll, for the key you seek lies without, not within</h2>
+        <h2 style="color: #850000;">Search the first scroll, for the key you seek lies without, not within</h2>
         </div>
-    
+
 </table>
 </body>
 </html>
-
